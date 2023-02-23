@@ -1,5 +1,5 @@
 ---
-title: "example-notebook.qmd"
+title: "My Reproducibility Demo"
 format: html
 editor: visual
 author: Mary Lofton
@@ -25,10 +25,10 @@ You can add options to executable code like this
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
-:onion:
 ```{r}
 library(tidyverse)
-
+library(usethis)
+#usethis::use_github_action("render-rmarkdown.yaml")
 mtcars |> ggplot(aes(cyl, mpg)) + geom_point()
 
 
