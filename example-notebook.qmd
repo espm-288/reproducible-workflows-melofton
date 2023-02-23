@@ -29,6 +29,12 @@ The `echo: false` option disables the printing of code (only output is displayed
 library(tidyverse)
 library(usethis)
 #usethis::use_github_action("render-rmarkdown.yaml")
+#library(renv)
+#renv::activate()
+# renv::hydrate()
+# install.packages("yaml")
+# install.packages("tidyverse")
+# renv::snapshot()
 mtcars |> ggplot(aes(cyl, mpg)) + geom_point()
 
 
